@@ -1,0 +1,46 @@
+// SKILLS SECTION STYLES
+
+.skills {
+    background-color: $secondary;
+    text-align: center;
+
+    h2 {
+        color: white;
+        margin-bottom: 0.8rem;
+    }
+
+    .skillsContainer {
+        padding: 5rem 0 4rem; 
+
+        .skillsIcons {
+            ul {
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 50%;
+                margin: 0 auto;
+                
+                li {
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    margin: 0.8rem 1rem;
+
+                    svg {
+                        height: 5rem;
+                        width: 5rem;
+                        margin-top: -0.4rem;
+                    }
+
+                    h5 {
+                        color: $tertiary;
+                    }
+
+                    .firebase {
+                        margin-top: -0.7rem;
+                    }
+                    }
+                }
+            }
+    }
+}

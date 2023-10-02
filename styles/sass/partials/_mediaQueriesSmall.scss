@@ -1,0 +1,373 @@
+@media(max-width: 480px) {
+    // BASESTYLES
+    .wrapper {
+        width: 85%;
+    }
+    
+    .button {
+        font-family: $headingFont;
+        font-size: .6rem;
+        background-color: $senary;
+        // border-color: ;
+        // letter-spacing: 1.9px;
+        color: $primary;
+        padding: 0.4rem 1rem;
+        margin: 0 auto;
+        font-weight: bold;
+        text-decoration: none;
+        border-style: none;
+    }
+
+    // skills section icons
+.skillsContainer {    
+
+    .skillsIcon {
+        color: white;
+        font-size: 2rem;
+        margin: 0 .5rem;
+    }
+}
+
+    // contact section icons
+    .contactIcon {
+        color: white;
+        font-size: 2rem;
+    }
+
+    //TYPOGRAPHY
+    h1 {
+        font-family: $headingFont;
+        color: $quaternary;
+        font-size: 2.2rem;
+        // font-weight: bold;
+        margin: 0;
+        // text-align: center;
+        // letter-spacing: 0.12rem; // 2.4px;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    nav {
+        font-family: $headingFont;
+        font-weight: bold;
+        color: $primary;
+        // font-size: 3.5rem;
+        margin: 0;
+    }
+
+    p {
+        font-family: $bodyFont;
+        color: $primary;
+        margin: 0;
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        text-transform: uppercase;
+        color: $secondary;
+        font-size: 0.7rem;
+        margin: 0;
+    }
+
+    a {
+        text-decoration-line: none;
+        margin: 0;
+    }
+
+    //HEADER 
+    header{
+        .hamburger {
+            display: block; // to actually display the hambuguer menu
+            position: fixed;           
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .navUl {
+            position: fixed; // for the navBar to remain on top when we scroll the screen - maybe change this
+            left: -200%; // to hide it from our view
+            top: 0rem; // for menu to come off the top by 70px
+            gap: 0;
+            flex-direction: column; // for links of the navBar to appear in a column
+            background-color: $secondary;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s; // for menu to appear on the screen
+        }
+
+        .navUl.active {
+            //we're gonna activate it with js
+            left: 0; // before it was hiden in a position -100, so when we chang eit to 0 the navUl will appear
+        }
+
+        .navLi {
+            line-height: 2.2rem;
+            margin: 0rem;
+
+
+            a {
+                padding: .8rem 15rem;
+            }
+
+            a:hover {
+                background-color: $tertiary;
+                color: $secondary;
+            }
+        }
+    }
+    
+
+    //ABOUT SECTION
+
+    .about {
+        background-color: white;
+        text-align: center;
+
+        .aboutInfo {
+            padding: 5.5rem auto 3rem;
+        
+
+            img {
+                border-radius: 50%;
+                height: 4rem;
+                margin: 0 auto;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin:.5rem auto;
+            }
+
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    //SKILLS SECTION
+    .skills {
+        background-color: $secondary;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        .skillsContainer {
+            padding-top: 5rem;
+            // margin-bottom: 5rem;
+            
+            .wrapper {
+                width: 100%;
+            }
+
+            .skillsIcons {                  
+                h5 {
+                    font-size: 0.7rem;
+                    margin-top: 0.3rem;
+                    color: $tertiary;
+                }
+                
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    max-width: 90%;
+                    padding-left: 0;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 1rem 1rem;
+
+                        svg {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            margin: 0rem;
+                            padding: 0rem;
+                        }
+
+                        .firebase {
+                            margin-top: -0.1rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    //PROJECTS SECTION
+    .projects {
+        background-color: $quaternary;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            padding-top: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        .allProjects {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+
+            .projectContainer {
+                background-color: white;
+                // height: 24rem;
+                width: 100%;
+                margin: 1rem 0rem;
+
+                .imageContainer {
+                    height: 8rem;
+                    background-color: $tertiary;
+                    font-size: 4rem;
+                    color: $secondary;
+
+                    i {
+                        padding-top: 10%;
+                    }
+
+                    img {
+                        margin: 0;
+                        padding: 0;
+                        // height: 100%;
+                        // width: 100%;
+                    }
+                }
+
+                .textContainer {
+                    text-align: left;
+                    padding: 2rem;
+
+                    h5 {
+                        margin: 0.5rem auto;
+                    }
+
+                    p {
+                        margin: 0.7rem 0;
+                    }
+
+                    .buttons {
+                        margin-top: 1.2rem;
+                    }
+
+                    .button {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+
+    // CONTACT SECTION
+    .contact {
+        background-color: $tertiary;
+        text-align: center;
+
+        .contactContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        .contactIcons {
+            display: flex;
+            justify-content: center;
+            
+            
+            
+            li {
+                margin: 0.5rem;
+            }
+        }
+
+        p {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-family: $headingFont;
+            font-size: 1.2rem;
+        }
+
+        .contactForm{
+            width: 21rem; 
+
+            .formSpaces { 
+                font-family: $headingFont;
+                width: 100%;
+
+                li {
+                    margin: .8rem auto;
+                }
+                
+                input, textarea {
+                    background-color: $tertiary;
+                    width: 100%;           
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 2px solid $secondary;   
+                }
+
+                .button {
+                    font-family: $headingFont;
+                    font-size: .6rem;
+                    background-color: $senary;
+                    color: $primary;
+                    padding: 0.4rem 1rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-style: none;
+                    
+                }
+
+                textarea {
+                    border: 2px solid $secondary;
+                    height: 5rem;
+                    width: 100%;
+                }
+            }
+        } // end of .contactForm
+    } //end of .contactContainer
+    }
+
+    //FOOTER
+    footer {
+    background-color: $secondary;
+    height: 2.5rem;
+    text-align: center;
+
+    p {
+        color: white;
+        padding-top: 0.4rem;
+    }
+}
+}

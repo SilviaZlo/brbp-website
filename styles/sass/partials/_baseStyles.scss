@@ -1,0 +1,47 @@
+// BASE STYLES
+
+// wrapper
+.wrapper {
+    max-width: 1260px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+// anchor tags that look like buttons
+.button {
+    font-family: $headingFont;
+    font-size: .8rem;
+    background-color: $secondary;
+    color: $primary;
+    padding: 0.5rem 2.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+    border-radius: .4rem;
+}
+
+.button:hover {
+    background-color: $secondary;
+    border: 0.10rem solid $primary;
+    transition: all 0.3s linear; //doesnt seem to be working
+}
+
+// lists (ul)
+ul {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+} 
+
+// skills section icons
+.skillsIcon {
+    color: white;
+    font-size: 4rem;
+}
+
+// contact section icons
+.contactIcon {
+    color: white;
+    font-size: 2rem;
+}
+

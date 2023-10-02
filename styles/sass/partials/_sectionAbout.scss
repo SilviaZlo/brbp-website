@@ -1,0 +1,21 @@
+// ABOUT SECTION STYLES
+
+.about {
+    background-color: white;
+    text-align: center; 
+
+    .aboutInfo {
+        padding: 5.5rem 0rem 3rem;
+        width: 50%;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 8rem;
+        margin: 0 auto;
+    }
+
+    p {
+        margin: 1rem auto;
+    }
+}

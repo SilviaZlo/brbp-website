@@ -1,0 +1,91 @@
+.contact {
+    background-color: $tertiary;
+    text-align: center;
+
+    .contactContainer {
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .contactIcons {
+            display: flex;
+            justify-content: center;
+            
+            li {
+                margin: 0.5rem;
+            }
+        }
+
+        p {
+            margin: 1rem 0;
+            font-weight: bold;
+            font-family: $headingFont;
+        }
+
+        .contactForm{
+            width: 60%;
+        
+            .formSpaces { 
+                font-family: $headingFont;
+                width: 100%;
+                
+                li {
+                    margin: .8rem;
+                }
+                
+                input, textarea {
+                    width: 100%;  
+                    font: inherit;     
+                    border-radius: .4rem;
+                }
+
+                // input {
+                //     border-bottom: 2px solid $secondary;   
+                // }
+
+                textarea {
+                    min-height: 8rem;
+                    resize: vertical; // so that user cannot horizontally resize the text area field
+                }
+
+                input:hover,
+                input:focus,
+                textarea:hover,
+                textarea:focus {
+                    outline: none; // not working 
+                    border-color: $secondary;
+                    background-color: $secondary;
+                    transition: 0.3s ease;
+                }
+
+                .button {
+                    width: 7rem;
+                    font-family: $headingFont;
+                    font-size: .8rem;
+                    background-color: $secondary;
+                    color: $primary;
+                    font-weight: bold;
+                    text-decoration: none;
+                    border-style: none;
+                }
+
+                .button:hover,
+                .button:focus{
+                    background-color: $secondary;
+                    border: 0.10rem solid $primary;
+                    transition: 0.3s ease;
+                }
+
+                textarea {
+                    border: 2px solid $secondary;
+                    height: 5rem;
+                    width: 100%;
+                }
+            }
+        } // end of .contactForm
+    } //end of .contactContainer
+}
+
+ 

@@ -1,0 +1,115 @@
+// HEADER STYLES
+
+header {
+    background-color: $quaternary;
+
+    // height: 100vh;
+
+    // video {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     object-fit: cover;
+    //     // margin: 0 auto;
+    //     width: 100%;
+    //     height: 100%;
+    // }
+
+    .logo {
+        border-radius: 50%;
+        width: 5rem;
+        position: fixed;
+        margin-top: -11rem;
+        margin-left: 2rem;
+        z-index: 20;
+    }
+
+    .navContainer {
+        position: relative;
+        z-index: 10;
+
+        .navBar {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            width: 100%;
+            top: 0;
+        }
+
+        
+
+        .navUl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navLi {
+            margin: .7rem 1rem;
+            display: flex;
+            justify-content: center;
+
+            a {
+                    color: white;
+                    font-size: 1rem;
+                    padding: 0.7rem 3rem;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+            a:hover {
+            background-color: $secondary;
+            transition: 0.8s ease;
+            }
+        } 
+
+        .hamburger {
+            position: fixed;
+            top: .75rem;
+            right: 1rem;
+            // display: none;
+            background-color: $secondary;
+            padding: 0rem .2rem;
+        }
+
+        .hamburger .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background-color: white;
+
+            a {
+                max-width: 1.5rem;
+            }
+
+            a:hover {
+                    background-color: $secondary;
+                    transition: 0.8s ease;
+                }
+        }
+    }
+
+    .mainContainer {
+        margin: 12rem 0 0 7rem;
+        padding-bottom: 9rem;
+        text-align: left;
+        color: $primary;
+
+        p {
+            color: $primary; 
+            font-size: 1.5rem;
+            margin: 0.6rem 0 1.5rem;
+        }
+
+        .button {
+            margin-top: 4rem;
+        }
+    }
+}
+
